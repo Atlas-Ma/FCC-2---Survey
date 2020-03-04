@@ -1,44 +1,51 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
 <html>
-<head></head>
+<head>
+  <title> Job Satisfation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <header>
   <h1 id="title"><u>Job Satisfaction Survey Form</u></h1>
   <p id="description">Take a moment and help us fill out the following survey</p>
 </header>
 
 <body id="main">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
  <figure id="img-div">
-   <img id="image" src="https://brightworks.ca/wp-content/uploads/2017/05/RahulRaj-copy.png" alt:"picture of a laptop, desk and plant"</img>
+   <img id="image" src="https://brightworks.ca/wp-content/uploads/2017/05/RahulRaj-copy.png" alt:"photo of a laptop, desk and plant">
    <figcaption id="image-caption">Work Happy! </figcaption>
   </figure>
  <form id="survey-form">
-   <div-class="form-group">
+   <div class="form-group">
      <label id="name-label" for="name">Name:</label>
-     <input type="text" id="name" class:"form-control" placeholder="Enter your name" required />
-<div>
+     <input type="text" id="name" class:"form-control" placeholder="Enter your name" required>
+
      <label id="email-label" for="email">Email:</label>
-     <input type="email" name="email" id="email" class:"form-control" placeholder="Enter your email" required />
-</div>
-<div-class:"form-group">
+     <input type="email" name="email" id="email" class:"form-control" placeholder="Enter your email" required>
+   
+    </div>
+  </form>  
+<div class:"form-group">
   <label id="number-label" for="number">Age:<span class="clue">(Optional)</span></label>
-<input type="number" name="age" id="number" min= "10" max="99" class="form-control"  placeholder="Age" />
-  </div>
+<input type="number" name="age" id="number" min= "10" max="99" class="form-control"  placeholder="Age"/>
+
      
 <div class="form-group">
   <p style="Text-align:left;">Which option best describes your current role?</p>
-  <select id="dropdown" name="role" class="form-control" required />
+  <select id="dropdown" name="role" class="form-control" required >
   <option disabled selected value>Select Current role</option>
   <option value="student">Student</option>
   <option value="fulltime">Full time work</option>
   <option value="parttime">Part time work</option>
-  <option value="freelance">Free lance/Self Employed
+  <option value="freelance">Free lance/Self Employed</option>
   <option value="unemployed">Currently Unemployed</option>
   </select>
-     </div>
+</div>
 <div class="form-group">
   <p style="Text-align:left;">Do you enjoy your work?</p>
   <label>
-  <input name="job-happy" value="definitely" type="radio" class="input-radio" checked />Definitely</>
+  <input name="job-happy" value="definitely" type="radio" class="input-radio" checked />Definitely
   </label>
   <label>
     <input name="job-happy" value="not-really" type="radio" class="input-radio"/> Not Really </label>
@@ -47,16 +54,16 @@
   <label>
     <input name="job-happy" value="sometimes" type="radio" class="input-radio"/>Sometimes</label>
    </div>
-   </div class="form-group">
+   <div class="form-group">
   <p>What are your favourites features of your current occupation?</p>
-  <select id="most-like" name="mostlike" class="form-control" required/>
+  <select id="most-like" name="mostlike" class="form-control" required>
   <option disabled selected value>Select an Option</option>
   <option value="wage">Wages</option>
   <option value="hours">Hours worked</option>
   <option value="vacation">Annual Vacation time</option>
   <option value="benefits">Benefits</option>
   <option value="pension">Pension</option>
-  <option value="Coworkers"</option>
+  <option value="coworkers">Coworkers</option>
   </select>
   </div>
 <div class="form-group">
@@ -65,21 +72,20 @@
 <span class="clue"> (Check all that apply) </span></p>
   <label>
     <input name="family" value="family" type="checkbox" class="input-checkbox"/>Family</label>
-  <input name="friends" value="friends" type="checkbox" class="input-checkbox"/>Friends</label>
-<input name="timeoffvacations" value="timeoffvacations" type="checkbox" class="input-checkbox"/>Vacations</label>
-<input name="hobbies" value="hobbies" type="checkbox" class="input-checkbox"/> Hobbies </label>
-  <input name="money" value="money" type="checkbox" class="input-checkbox"/>Money</label>
-<input name="workpurpose" value="workpurpose" type="checkbox" class="input-checkbox"/> </label>
+  <label><input name="friends" value="friends" type="checkbox" class="input-checkbox"/>Friends</label>
+<label><input name="timeoffvacations" value="timeoffvacations" type="checkbox" class="input-checkbox"/> Vacations</label>
+<label><input name="hobbies" value="hobbies" type="checkbox" class="input-checkbox"/> Hobbies </label>
+ <label> <input name="money" value="money" type="checkbox" class="input-checkbox"> Money</label>
+<label><input name="workpurpose" value="workpurpose" type="checkbox" class="input-checkbox">Purpose/Work</label>
+
 </div>
 
 <div class="form-group">
   <p>Any comments or suggestions on how employers can make their employess happier or more fulfilled? Any stories about what makes your job a dream job? Leave comments below."</p>
   <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter you rcomments here" > </textarea>
 </div>
-<div class="form group">
+<div class="form-group">
   <button type="sumbit" id="submit" class="submit-button"> Submit </button>
-</div>
-</form>
 </div>
 
   

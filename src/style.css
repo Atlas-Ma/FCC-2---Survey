@@ -1,16 +1,17 @@
-<style>
-h1 {text-align:center;
+
+
+h1 { text-align:center;
 background:repeating-linear-gradient(90deg, white, black);
   font-size:50px;
 
 
 }
 img{height:50rem;
-    max-width:60rem;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;}
+    max-width:80rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;}
 
 body {
     height:100%;
@@ -24,6 +25,11 @@ font-size:1.1rem;}
 figcaption {text-align:right;
 padding-right:10rem;
 }
-</style>
+
+.form-group{
+  border: 2px solid black;
+  display:grid;
+  grid-template-rows: auto;
+}
 
 
