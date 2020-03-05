@@ -5,36 +5,42 @@
   <title>Job Satisfation</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<header>
-  <h1 id="title"><u>Job Satisfaction Survey Form</u></h1>
-  <p id="description">
-    Take a moment and help us fill out the following survey
-  </p>
-</header>
+
 
 
 
 <body id="main">
-  
+  <header>
+    <h1 id="title"><u>Job Satisfaction Survey Form</u></h1>
+    <p id="description">
+      Take a moment and help us fill out the following survey
+    </p>
+  </header>
 
   <figure id="img-div">
     <img id="image" src="https://brightworks.ca/wp-content/uploads/2017/05/RahulRaj-copy.png">
     <figcaption id="image-caption">Work Happy!</figcaption>
   </figure>
+  
   <form id="survey-form">
-    <div class="form-group">
+   <div class="form-group">
       <label id="name-label" for="name">Name:</label>
-    <input type="text" id="name" placeholder="Enter your name" required/>
-
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />    
+   </div>
+    
+   <div class="form-group">
       <label id="email-label" for="email">Email:</label>
-    <input type="email" id="email" class="form-control" placeholder="Enter your email" required/>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
     </div>
-  </form>
+  
+  
   <div class="form-group">
     <label id="number-label" for="number">Age:<span class="clue">(Optional)</span></label>
-    <input type="number" name="age" id="number " min="10" max="99" class="form-control" placeholder="Age" required/>
+    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required/>
+  </div>
 
-    <div class="form-group">
+  
+  <div class="form-group">
       <p style="Text-align:left;">
         Which option best describes your current role?
       </p>
@@ -47,8 +53,9 @@
         <option value="unemployed">Currently Unemployed</option>
       </select>
     </div>
-  <div class="form-group">
-      <p style="Text-align:left;">Do you enjoy your work?</p>
+  
+    <div class="form-group">
+      <p style="text-align:left;">Do you enjoy your work?</p>
       <label>
         <input name="job-happy" value="definitely" type="radio" class="input-radio" checked />Definitely
       </label>
@@ -62,6 +69,7 @@
       <label>
         <input name="job-happy" value="sometimes" type="radio" class="input-radio"/>Sometimes</label>
     </div>
+  
   <div class="form-group">
       <p>What are your favourites features of your current occupation?</p>
       <select id="most-like" name="mostlike" class="form-control" required>
@@ -74,23 +82,20 @@
         <option value="coworkers">Coworkers</option>
       </select>
   </div>
-    <div class="form-group">
+    
+  <div class="form-group">
       <p>
         What makes you happiest in life?
         <span class="clue"> (Check all that apply) </span>
       </p>
-      <label>
-        <input name="family" value="family" type="checkbox" class="input-checkbox"/>Family</label>
+      
+      <label> <input name="family" value="family" type="checkbox" class="input-checkbox"/>Family</label>
       <label> <input name="friends" value="friends" type="checkbox" class="input-checkbox"/>Friends</label>
-      <label> <input name="timeoffvacations" value="timeoffvacations" type="checkbox" class="input-checkbox"/>
-        Vacations</label>
-      <label><input name="hobbies" value="hobbies" type="checkbox" class="input-checkbox"/>
-        Hobbies
-      </label>
-      <label>
-        <input name="money" value="money" type="checkbox" class="input-checkbox"/>
-        Money</label>
-      <label><input name="workpurpose" value="workpurpose" type="checkbox" class="input-checkbox" />Purpose/Work</label>
+      <label> <input name="timeoffvacations" value="timeoffvacations" type="checkbox" class="input-checkbox"/>Vacations</label>
+      <label> <input name="hobbies" value="hobbies" type="checkbox" class="input-checkbox"/>Hobbies</label>
+      <label><input name="money" value="money" type="checkbox" class="input-checkbox"/>Money</label>
+      <label><input name="workpurpose" value="workpurpose" type="checkbox" class="input-checkbox"/>Purpose/Work</label>
+    
     </div>
 
     <div class="form-group">
@@ -105,7 +110,7 @@
     <div class="form-group">
       <button type="sumbit" id="submit" class="submit-button">Submit</button>
     </div>
-</div>
+  </form>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

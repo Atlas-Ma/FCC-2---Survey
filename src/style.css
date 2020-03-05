@@ -17,6 +17,7 @@ body {
     height:100%;
     width:100%;
     background:linear-gradient(35deg, white, black);
+    text-align: center;
     }
 
 p {text-align:center;
